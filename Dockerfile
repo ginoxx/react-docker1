@@ -3,6 +3,7 @@
 FROM node:latest as react-build
 WORKDIR /app
 COPY . ./
+#RUN yarn upgrade latest
 RUN yarn
 RUN yarn build
 
